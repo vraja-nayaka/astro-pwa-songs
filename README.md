@@ -1,6 +1,5 @@
 <img align="center" width="1725" alt="Screen Shot 2022-09-03 at 10 09 25 AM" src="https://user-images.githubusercontent.com/5169985/188276737-322f1e21-08a9-4b84-8a83-b394507f302d.png">
 
-
 <h1 align="center">🟢 astro-pwa-starter</h1>
 
 <p align="center">An opinionated Astro starter for building robust static websites.</p>
@@ -32,8 +31,8 @@ Here is a list of core dependencies that astro-pwa-starter relies on in case you
 
 All commands are run from the root of the project, from a terminal:
 
-| Command                | Action                                             |
-| :--------------------- | :------------------------------------------------- |
+| Command                 | Action                                             |
+| :---------------------- | :------------------------------------------------- |
 | `pnpm install`          | Installs dependencies                              |
 | `pnpm run dev`          | Starts local dev server at `localhost:3000`        |
 | `pnpm run build`        | Build your production site to `./dist/`            |
@@ -178,7 +177,7 @@ import { Layout } from "@globals"
 ---
 
 <Layout title="Home Page" description="Welcome to my website's homepage!">
-	// ...
+  // ...
 </Layout>
 ```
 
@@ -408,7 +407,7 @@ import {Layout} from "@utils"
 ---
 
 <Layout title="Page title" description="This is the page description">
-	// ...
+  // ...
 </Layout>
 ```
 
@@ -477,51 +476,51 @@ import type { ManifestOptions } from "vite-plugin-pwa"
  * Defines the default SEO configuration for the website.
  */
 export const seoConfig = {
-	baseURL: "https://example.com", // Change this to your production URL.
-	description:
-		"Astro PWA Starter is an opionated Astro starter for building robust static websites.", // Change this to be your website's description.
-	type: "website",
-	image: {
-		url: "https://picsum.photos/1200/630", // Change this to your website's thumbnail.
-		alt: "OpenGraph thumbnail description.", // Change this to your website's thumbnail description.
-		width: 1200,
-		height: 630
-	},
-	siteName: "Astro PWA Starter", // Change this to your website's name,
-	twitter: {
-		card: "summary_large_image"
-	}
+  baseURL: "https://example.com", // Change this to your production URL.
+  description:
+    "Astro PWA Starter is an opionated Astro starter for building robust static websites.", // Change this to be your website's description.
+  type: "website",
+  image: {
+    url: "https://picsum.photos/1200/630", // Change this to your website's thumbnail.
+    alt: "OpenGraph thumbnail description.", // Change this to your website's thumbnail description.
+    width: 1200,
+    height: 630
+  },
+  siteName: "Astro PWA Starter", // Change this to your website's name,
+  twitter: {
+    card: "summary_large_image"
+  }
 }
 
 /**
  * Defines the configuration for PWA webmanifest.
  */
 export const manifest: Partial<ManifestOptions> = {
-	name: "Astro PWA Starter",
-	short_name: "Astro PWA Starter",
-	description:
-		"Astro PWA Starter is an opionated Astro starter for building robust static websites.",
-	theme_color: "#30E130",
-	background_color: "#ffffff",
-	display: "minimal-ui",
-	icons: [
-		{
-			src: "/favicons/favicon-192x192.png",
-			sizes: "192x192",
-			type: "image/png"
-		},
-		{
-			src: "/favicons/favicon-512x512.png",
-			sizes: "512x512",
-			type: "image/png"
-		},
-		{
-			src: "/favicons/favicon-512x512.png",
-			sizes: "512x512",
-			type: "image/png",
-			purpose: "any maskable"
-		}
-	]
+  name: "Astro PWA Starter",
+  short_name: "Astro PWA Starter",
+  description:
+    "Astro PWA Starter is an opionated Astro starter for building robust static websites.",
+  theme_color: "#30E130",
+  background_color: "#ffffff",
+  display: "minimal-ui",
+  icons: [
+    {
+      src: "/favicons/favicon-192x192.png",
+      sizes: "192x192",
+      type: "image/png"
+    },
+    {
+      src: "/favicons/favicon-512x512.png",
+      sizes: "512x512",
+      type: "image/png"
+    },
+    {
+      src: "/favicons/favicon-512x512.png",
+      sizes: "512x512",
+      type: "image/png",
+      purpose: "any maskable"
+    }
+  ]
 }
 ```
 
